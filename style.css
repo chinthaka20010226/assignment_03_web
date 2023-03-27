@@ -2,10 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-body {
-    overflow-x: hidden;
 }
 ul {
     list-style: none;
@@ -13,69 +9,128 @@ ul {
 a {
     text-decoration: none;
 }
-header .navbar .links ul li i {
-    color: lightgray;
-    padding-right: 5px;
-}
 
-/* Head */
-header {
+/* Header */
+.head {
     width: 100%;
-    background-color: black;
-}
-
-/* Navigation */
-header .navbar {
-    width: 120%;
-    height: 5em;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-header .navbar .logo {
-    width: 14%;
-    height: 2.5em;
-    padding: 5px;
-    margin: 5px 0px 0px 50px;
-    background: url('./Lyceum-Logo-White.svg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* background-color: red; */
-}
-header .navbar .links {
-    padding: 5px;
-    margin-left: -250px;
-}
-header .navbar .links ul {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
-header .navbar .links ul li {
-    padding: 0px 10px;
-    margin: 10px;
+
+/* Navigation */
+.head .navbar {
+    width: 100%;
+    height: 15%;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+.head .navbar .logo {
+    width: 200px;
+    height: 40px;
+    background: url('./Lyceum-Logo-White.svg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* padding-left: 20px; */
+    margin-left: 30px;
+}
+.head .navbar .links {
     /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    margin-left: 70px;
 }
-header .navbar .links ul li a {
+.head .navbar .links ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head .navbar .links ul li {
+    padding-right: 30px;
+}
+.head .navbar .links ul li a {
+    color: lightgray;
+    font-weight: bold;
+}
+.head .navbar .links ul li a i {
+    padding-right: 5px;
+}
+.head .navbar .search_bar {
+    margin: 5px;
+}
+.head .navbar .search_bar input {
+    padding: 3px;
+}
+.head .navbar .search_bar i {
+    color: lightgray;
+    padding: 3px;
+    font-size: 18px;
+}
+.head .navbar .account {
+    margin: 5px;
+    padding: 5px 20px 5px 5px;
+}
+.head .navbar .account i {
+    color: lightgray;
+    font-size: 22px;
+}
+
+/* Head-content */
+.head .head_content {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.head .head_content .left_ {
+    width: 20%;
+    height: 100%;
+    /*background-color: red;
+    */display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    /* margin: 2px; */
+    border-top-right-radius: 10px;
+}
+.head .head_content .left_ ul li {
+    padding: 30px 20px;
+}
+.head .head_content .left_ ul li a {
     font-size: 18px;
     font-weight: bold;
     color: lightgray;
 }
-header .navbar .search {
-    margin-left: -250px;
-}
-header .navbar .search i {
-    color: lightgray;
-}
-
-
-/* Head Content */
-header .head_content {
-    width: 100%;
-    height: 100vh;
+.head .head_content .right_ {
+    width: 80%;
+    height: 100%;
+    /*background-color: green;
+    */display: flex;
+    justify-content: center;
+    align-items: center;
     background: url('./5.jpg') no-repeat;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 3px;
+} 
+.head .head_content .right_ h2 {
+    font-size: 80px;
+    letter-spacing: 0.6em;
+    color: whitesmoke;
 }
-
