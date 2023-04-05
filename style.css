@@ -13,6 +13,9 @@ a {
 i {
     color: whitesmoke;
 }
+/* body {
+    background-color: #000000;
+} */
 
 /* Head */
 .head {
@@ -35,29 +38,33 @@ i {
     align-items: center;
     background-color: black;
 }
-.head .navbar .scroll_bar {
+/* .head .navbar .scroll_bar {
     padding: 10px;
 }
 .head .navbar .scroll_bar i {
     font-size: 30px;
-}
+} */
 .head .navbar .logo {
-    width: 23%;
-    height: 3.5em;
+    width: 24%;
+    height: 3.6em;
     background: url('./Lyceum-Logo-White.svg') no-repeat;
     background-position: center;
     background-size: cover;
-    margin: 10px -150px;
+    margin: 10px 100px;
     padding: 5px;
 }
 .head .navbar .search_bar {
     width: 10%;
+    /* position: absolute; */
+    /* height: 3.6em; */
     display: flex;
-    margin: 10px 0px 10px 450px;
+    margin: 10px;
     /* background-color: red; */
 }
 .head .navbar .search_bar input {
     padding: 5px;
+    /* color: #fff; */
+    /* background-color: red; */
 }
 .head .navbar .search_bar i {
     padding: 5px;
@@ -65,6 +72,8 @@ i {
 }
 .head .navbar .account {
     width: 5%;
+    /* padding-left: -20px; */
+    margin-right: 40px;
 }
 .head .navbar .account i {
     padding: 5px;
@@ -75,6 +84,8 @@ i {
     height: 100%;
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
     background: url('./5.jpg') no-repeat;
     background-position: center;
     background-size: cover;
@@ -82,10 +93,11 @@ i {
 }
 .head .head_content .left {
     width: 20%;
-    height: 100%;
-    background-color: lightgray;
-    opacity: 0.5;
-    border-bottom-right-radius: 100px;
+    height: 90%;
+    background-color: rgb(152, 152, 152);
+    opacity: 0.7;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 .head .head_content .left ul {
     height: 100%;
@@ -100,7 +112,7 @@ i {
     line-height: 70px;
 }
 .head .head_content .left ul li a {
-    color: black;
+    color: whitesmoke;
     font-size: 20px;
     font-weight: bold;
 }
@@ -108,6 +120,190 @@ i {
     width: 80%;
     height: 100%;
 }
+
+
+/* Togal Bar */
+/* now insert google fonts here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+/* body */
+/* body {
+    background-color: #f2f2f2;
+} */
+.slide {
+    width: 200px;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transform: translateX(-200px);
+    -webkit-transform: translateX(-200px);
+    -moz-transform: translateX(-200px);
+    -ms-transform: translateX(-200px);
+    -o-transform: translateX(-200px);
+}
+.slide h1 {
+    color: #3ad2e3;
+    font-weight: 800;
+    font-size: 30px;
+    text-align: right;
+    padding: 20px 0px;
+    padding-right: 30px;
+    pointer-events: none;
+    margin-top: 60px;
+}
+/* .slide ul {
+    margin: 10px;
+} */
+.slide ul li a {
+    color: #011a41;
+    font-weight: 800;
+    padding: 10px 0px;
+    display: block;
+    text-transform: capitalize;
+    transition: 0.2s ease-out;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -ms-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+}
+.slide ul li:hover a {
+    color: #fff;
+    background-color: #3ad2e3;
+}
+.slide ul li a i {
+    padding: 5px;
+}
+
+#input_toggle {
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+
+.toggle {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 20px;
+    left: 15px;
+    z-index: 1;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    box-shadow: 0 0 10px rgb(0,0,0,0.3);
+}
+
+.toggle .common {
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: #3ad2e3;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
+.toggle .top_line {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.toggle .middle_line {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.toggle .bottom_line {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+input:checked ~ .toggle .top_line {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+input:checked ~ .toggle .bottom_line {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+input:checked ~ .toggle .middle_line {
+    opacity: 0;
+    transform: translateX(20px);
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    -o-transform: translateX(20px);
+}
+
+input:checked ~ .slide {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+
 
 /* Branches Content */
 .branches {
@@ -203,6 +399,31 @@ i {
     justify-content: space-around;
     align-items: center;
 }
+.branches .branches_content .content .location a i {
+    padding: 5px;
+}
+.branches .branches_content .content .location_list {
+    height: 150px;
+}
+.branches .branches_content .content .location_list ul li i {
+    /* background-color: red; */
+    padding: 5px;
+}
+.branches .branches_content .content .view {
+    /* background-color: red; */
+    margin: 15px;
+}
+.branches .branches_content .content .view a {
+    padding: 10px;
+    color: #000000;
+    font-weight: bold;
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
 
 /* About */
 .about {
@@ -239,6 +460,132 @@ i {
     background: url('./lyceum_school.png') no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+/* Registration Form */
+.reg_form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 10px;
+    
+    /* background-color: lightgray; */
+}
+.reg_form h2 {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 30px;
+    font-size: 40px;
+    font-weight: 500;
+}
+.reg_form form {
+    width: 100%;
+    padding: 10px 20px;
+    border: 2px solid lightgray;
+    /* background-color: aqua; */
+}
+.reg_form form table tr td {
+    padding: 5px;
+}
+.reg_form .input {
+    margin-left: 50px;
+}
+
+/* Login Form */
+.log_form {
+    width: 40%;
+    /* background-color: lightgray; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 20px auto;
+}
+.log_form h2 {
+    width: 56%;
+    font-size: 30px;
+    font-weight: 800;
+    padding: 10px;
+    /* border: 1px solid #000000; */
+    /* text-align: center; */
+}
+.log_form .td {
+    /* width: 50%; */
+    border: 1px solid #000000;
+    text-align: center;
+    /* float: left; */
+    padding: 3px;
+}
+
+/* Cotact Form */
+.contact_content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    /* background-color: #3ad2e3; */
+}
+.contact_content h2 {
+    width: 100%;
+    text-align: center;
+    padding: 20px 10px 30px 10px;
+    font-size: 40px;
+    font-weight: 500;
+}
+.contact_content .phone_email {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid lightgray;
+    padding: 10px;
+}
+.contact_content .phone_email .phone,.email {
+    padding: 10px;
+}
+.contact_content .para {
+    width: 100%;
+    padding: 30px 0px;
+}
+.contact_content .contact_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 50px;
+    border: 2px solid lightgray;
+}
+.contact_content .contact_form .phone_email_ {
+    width: 100%;
+    display: flex;
+}
+.contact_content .contact_form .phone_email_ .phone_,.email_ {
+    width: 50%;
+    padding: 5px;
+}
+.contact_content .contact_form p {
+    padding: 10px 0px;
+}
+.contact_content .contact_form .f1 {
+    width: 100%;
+    padding: 5px;
+}
+.contact_content .contact_form .f2 {
+    width: 15%;
+    margin: 10px 0px;
+    background-color: #fff;
+    border: none;
+    border: 1px solid lightgray;
+    padding: 5px;
 }
 
 /* Bottom */

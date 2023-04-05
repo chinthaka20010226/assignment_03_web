@@ -21,10 +21,10 @@
                 <h1>MENU</h1>
                 <ul>
                     <li><a href="./home_.html" target="_blank"><i class="fa-solid fa-tv"></i>Home</a></li>
-                    <li><a href="./registration_form_.html"><i class="fa-solid fa-user"></i>Registration</a></li>
+                    <li><a href="./registration_form_.html" target="_blank"><i class="fa-solid fa-user"></i>Registration</a></li>
                     <li><a href="./login_form_.html" target="_blank"><i class="fa-solid fa-fire"></i>Login</a></li>
                     <li><a href="./about_.html" target="_blank"><i class="fa-solid fa-envelope"></i>About</a></li>
-                    <li><a href="./contact_.html" target="_blank"><i class="fa-solid fa-circle-user"></i>Contact</a></li>
+                    <li><a href="./contact_.html"><i class="fa-solid fa-circle-user"></i>Contact</a></li>
                     <!-- <li><a href="#"><i class="fa-solid fa-heart"></i>portfolio</a></li>
                     <li><a href="#"><i class="fa-solid fa-thumbs-up"></i>saved</a></li>
                     <li><a href="#"><i class="fa-solid fa-gears"></i>setting</a></li> -->
@@ -61,69 +61,55 @@
         </header>
         <hr>
 
-        <div class="reg_form">
-            <h2>Registration Form</h2>
-            <form>
-                <table>
-                    <tr>
-                        <td class="t1">User Id:</td>
-                        <td class="input"><input type="text" name="userid"></td>
-                    </tr>
-                    <tr>
-                        <td class="t1">Password:</td>
-                        <td class="input"><input type="password"></td>
-                    </tr>
-                    <tr>
-                        <td class="t1">Name:</td>
-                        <td class="input"><input type="text" name="username"></td>
-                    </tr>
-                    <tr>
-                        <td class="t1">Address:</td>
-                        <td class="input"><input type="text" name="address"></td>
-                    </tr>
-                    <tr>
-                        <td class="t1">Country:</td>
-                        <td class="input">
-                            <select name="country">
-                                <option value="Default">(Please Select a Coutry)</option>
-                                <option value="Sri Lanka">Sri Lanka</option>
-                                <option value="America">America</option>
-                                <option value="Canada">Canada</option>
-                                <option value="Germany">Germany</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="t1">ZIP Code:</td>
-                        <td class="input"><input type="text" name="zip_code"></td>
-                    </tr>
-                    <tr>
-                        <td class="t1">Email</td>
-                        <td class="input"><input type="email" name="email"></td>
-                    </tr>
-                    <tr>
-                        <td class="t1">Sex:</td>
-                        <td class="input"><input type="radio" name="male">Male
-                            <input type="radio" name="female">Female</td>
-                    </tr>
-                    <tr>
-                        <td class="t1">Language:</td>
-                        <td class="input"><input type="checkbox" name="english">English
-                            <input type="checkbox" name="non_english">Non Englsih</td>
-                    </tr>
-                    <tr>
-                        <td class="t1">About:</td>
-                        <td class="input"><textarea name="about" cols="25" rows="5"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <!-- <td></td> -->
-                        <td class="input"><input type="submit" name="submit" value="Submit"></td>
-                    </tr>
-                </table>
-            </form>
-        </div>
-        <hr>
+        <section>
+            <div class="contact_content">
+                <h2>CONTACT US</h2>
+                <div class="phone_email">
+                    <div class="phone">
+                        <p>Phone<br><a href="#">066 555 5000</a></p>
+                    </div>
+                    <div class="email">
+                        <p>Email<br><a href="#">lyceumer@lyceum.lk</a></p>
+                    </div>
+                </div>
+                <div class="para">
+                    <p>Want to make a reservation? Have any queeries?<br>
+                        Fill out the form below and we get back to you soon!</p>
+                </div>
+                <div class="contact_form">
+                    <div class="name_">
+                        <p>Name</p>
+                        <input type="text" class="f1">
+                    </div>
+                    <div class="phone_email_">
+                        <div class="email_">
+                            <p>Email</p>
+                            <input type="email" class="f1">
+                        </div>
+                        <div class="phone_">
+                            <p>phone</p>
+                            <input type="number" class="f1">
+                        </div>
+                    </div>
+                    <div class="country_">
+                        <p>Country</p>
+                        <input type="text" class="f1">
+                    </div>
+                    <div class="subject_">
+                        <p>Subject</p>
+                        <input type="text" class="f1">
+                    </div>
+                    <div class="message_">
+                        <p>Message</p>
+                        <textarea cols="60" rows="10"></textarea>
+                    </div>
+                    <div class="submit_reset_">
+                        <input type="submit" class="f2">
+                        <input type="reset" class="f2">
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section>
             <div class="bottom">
