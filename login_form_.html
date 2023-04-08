@@ -64,7 +64,7 @@
         <section>
             <div class="log_form">
                 <h2 class="td">Login In</h2>
-                <form>
+                <form name="frm_" onsubmit="return loginValidation(this);">
                     <table>
                         <tr>
                             <td class="td">User Type:</td>
@@ -77,7 +77,7 @@
                         </tr>
                         <tr>
                             <td class="td">User Name:</td>
-                            <td class="td"><input type="text" name="username" value="username"></td>
+                            <td class="td"><input type="text" name="username" ></td>
                         </tr>
                         <tr>
                             <td class="td">Password:</td>
@@ -170,4 +170,7 @@
             </div>
         </footer>
     </body>
+
+    <!-- External -->
+    <script src="./js_.js"></script>
 </html>

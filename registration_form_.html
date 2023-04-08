@@ -63,7 +63,7 @@
 
         <div class="reg_form">
             <h2>Registration Form</h2>
-            <form>
+            <form name="frm" onsubmit="return formValidation(this);">
                 <table>
                     <tr>
                         <td class="t1">User Id:</td>
@@ -71,7 +71,7 @@
                     </tr>
                     <tr>
                         <td class="t1">Password:</td>
-                        <td class="input"><input type="password"></td>
+                        <td class="input"><input type="password" name="password"></td>
                     </tr>
                     <tr>
                         <td class="t1">Name:</td>
@@ -103,13 +103,13 @@
                     </tr>
                     <tr>
                         <td class="t1">Sex:</td>
-                        <td class="input"><input type="radio" name="male">Male
-                            <input type="radio" name="female">Female</td>
+                        <td class="input"><input type="radio" name="sex" value="male">Male
+                            <input type="radio" name="sex" value="female">Female</td>
                     </tr>
                     <tr>
                         <td class="t1">Language:</td>
-                        <td class="input"><input type="checkbox" name="english">English
-                            <input type="checkbox" name="non_english">Non Englsih</td>
+                        <td class="input"><input type="checkbox" name="language" value="English">English
+                            <input type="checkbox" name="language" value="Non English">Non Englsih</td>
                     </tr>
                     <tr>
                         <td class="t1">About:</td>
@@ -202,4 +202,7 @@
             </div>
         </footer>
     </body>
+
+    <!-- External -->
+    <script src="./js_.js"></script>
 </html>

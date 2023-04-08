@@ -507,7 +507,7 @@ input:checked ~ .slide {
     margin: 20px auto;
 }
 .log_form h2 {
-    width: 56%;
+    width: 58%;
     font-size: 30px;
     font-weight: 800;
     padding: 10px;
@@ -554,6 +554,9 @@ input:checked ~ .slide {
 .contact_content .para {
     width: 100%;
     padding: 30px 0px;
+}
+.contact_content form {
+    width: 100%;
 }
 .contact_content .contact_form {
     width: 100%;

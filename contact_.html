@@ -76,38 +76,40 @@
                     <p>Want to make a reservation? Have any queeries?<br>
                         Fill out the form below and we get back to you soon!</p>
                 </div>
-                <div class="contact_form">
-                    <div class="name_">
-                        <p>Name</p>
-                        <input type="text" class="f1">
-                    </div>
-                    <div class="phone_email_">
-                        <div class="email_">
-                            <p>Email</p>
-                            <input type="email" class="f1">
+                <form name="frm__" onsubmit="return contactValidation(this);">
+                    <div class="contact_form">
+                        <div class="name_">
+                            <p>Name</p>
+                            <input type="text" class="f1" name="name">
                         </div>
-                        <div class="phone_">
-                            <p>phone</p>
-                            <input type="number" class="f1">
+                        <div class="phone_email_">
+                            <div class="email_">
+                                <p>Email</p>
+                                <input type="email" class="f1" name="email">
+                            </div>
+                            <div class="phone_">
+                                <p>phone</p>
+                                <input type="text" class="f1" name="phone">
+                            </div>
+                        </div>
+                        <div class="country_">
+                            <p>Country</p>
+                            <input type="text" class="f1" name="country">
+                        </div>
+                        <div class="subject_">
+                            <p>Subject</p>
+                            <input type="text" class="f1" name="subject">
+                        </div>
+                        <div class="message_">
+                            <p>Message</p>
+                            <textarea cols="60" rows="10" name="message"></textarea>
+                        </div>
+                        <div class="submit_reset_">
+                            <input type="submit" class="f2" name="submit" value="Submit">
+                            <input type="reset" class="f2">
                         </div>
                     </div>
-                    <div class="country_">
-                        <p>Country</p>
-                        <input type="text" class="f1">
-                    </div>
-                    <div class="subject_">
-                        <p>Subject</p>
-                        <input type="text" class="f1">
-                    </div>
-                    <div class="message_">
-                        <p>Message</p>
-                        <textarea cols="60" rows="10"></textarea>
-                    </div>
-                    <div class="submit_reset_">
-                        <input type="submit" class="f2">
-                        <input type="reset" class="f2">
-                    </div>
-                </div>
+                </form>
             </div>
         </section>
 
@@ -188,4 +190,7 @@
             </div>
         </footer>
     </body>
+
+    <!-- External -->
+    <script src="./js_.js"></script>
 </html>
